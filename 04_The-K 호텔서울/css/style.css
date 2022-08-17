@@ -1,0 +1,484 @@
+@charset 'utf-8';
+#wrap {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-width: 320px;
+  max-width: 420px;
+  margin: 0 auto;
+}
+/* #header-inner */
+#header-inner {
+  display: flex;
+  margin: 20px;
+}
+.reservation-fixed a {
+  position: fixed;
+  top: 70%;
+  right: 10%;
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-image: url(/img/btn_reservation.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-indent: -99999px;
+  z-index: 100;
+}
+.header-utility {
+  width: 10%;
+}
+.header-utility .more {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 50%;
+  margin: 30%;
+  cursor: pointer;
+}
+.header-utility .more p {
+  width: 70%;
+  height: 3px;
+  background-color: #000;
+  text-indent: -99999px;
+}
+.header-utility ul {
+  display: none;
+}
+.header-logo {
+  width: 50%;
+  padding: 1em;
+  padding-top: 0.7em;
+}
+.header-logo a {
+  display: block;
+  width: 100%;
+  background-image: url(/img/logo_site.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  text-indent: -99999px;
+}
+.header-menu {
+  width: 35%;
+}
+.header-menu .login,
+.header-menu .check-reservation,
+.header-menu .reservation,
+.header-menu .KR-logo {
+  display: none;
+}
+
+.header-menu .find-hotel {
+  display: block;
+  width: 100%;
+}
+.header-menu .find-hotel a {
+  display: block;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 11px;
+  background-color: rgb(146, 117, 80);
+  color: #fff;
+}
+.header-menu .find-hotel a img {
+  width: 15px;
+  height: 15px;
+  margin: 0 0 0 5px;
+}
+/* .main */
+.main-slide {
+  position: relative;
+  width: 100vw;
+  height: 550px;
+}
+.main-slide div {
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  color: #fff;
+  background-size: cover;
+  background-position: center center;
+}
+.main-slide .slide01 {
+  background-image: url(/img/visual_01_m.jpg);
+}
+.main-slide div:not(:first-child) {
+  display: none;
+}
+.main-slide div p {
+  position: absolute;
+  top: 55%;
+  left: 5%;
+  font-size: 33px;
+  font-weight: 500;
+}
+.main-slide div span {
+  position: absolute;
+  top: 63%;
+  left: 5%;
+  display: block;
+  width: 72%;
+  font-size: 15px;
+  font-weight: 400;
+}
+.main-slide div button {
+  position: absolute;
+  bottom: 20%;
+  left: 5%;
+  display: block;
+  width: 30%;
+  height: 7%;
+  border: 1px solid #fff;
+  font-size: 10px;
+  background-color: transparent;
+  color: #fff;
+}
+.main-promotion {
+  width: 100vw;
+  height: 65vh;
+  overflow: hidden;
+}
+.main-package {
+  width: 100vw;
+  height: 65vh;
+  overflow: hidden;
+}
+.title {
+  width: 100vw;
+  height: 30px;
+  margin: 50px auto 20px auto;
+  text-align: center;
+  font-size: 23px;
+  font-weight: 900;
+  letter-spacing: 10px;
+}
+.introduce {
+  width: 68vw;
+  margin: 0 auto 30px auto;
+  text-align: center;
+  font-size: 13px;
+  color: burlywood;
+}
+.slide-box {
+  display: flex;
+  width: 100%;
+}
+.slide {
+  position: relative;
+  width: 70vw;
+  margin: 0 5%;
+  border-top: 3px solid #111;
+}
+.slide .sub-title {
+  margin: 10px;
+  margin-top: 30px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+}
+.slide .date {
+  margin: 10px;
+  margin-bottom: 25px;
+  font-size: 11px;
+  color: #aaa;
+}
+.slide .image {
+  width: 70vw;
+}
+.slide .image img {
+  width: 100%;
+  height: 50%;
+}
+.slide .area {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  width: 20%;
+  height: 5%;
+  padding: 0.5em 0 1em 0;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  background-color: navy;
+  color: #fff;
+}
+.button ul {
+  display: flex;
+  justify-content: space-between;
+  width: 60vw;
+  margin: 30px auto;
+}
+.button li a {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  text-indent: -99999px;
+}
+.button .active a {
+  width: 20px;
+  background-color: navy;
+  border-radius: 45px;
+}
+.main-to-do {
+  width: 100vw;
+  height: 65vh;
+  margin: 50px auto;
+}
+.main-to-do .to-do-title {
+  width: 35%;
+  margin: 50px auto;
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+.main-to-do .area-list {
+  position: relative;
+  display: flex;
+  width: 75%;
+}
+.main-to-do .area-list div {
+  width: 70px;
+  height: 60px;
+  text-align: center;
+  background-color: #eee;
+}
+.main-to-do .area-list div p {
+  margin-top: 10px;
+}
+.main-to-do .area-list .active {
+  position: relative;
+  background-color: #fff;
+}
+.main-to-do .area-list .select {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+}
+.main-to-do .area-list .select span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #111;
+}
+.main-to-do .area-list .select img {
+  margin-top: 35px;
+  margin-left: 19px;
+}
+.main-to-do .to-do-slide {
+  position: absolute;
+  width: 100vw;
+  height: 50vh;
+}
+.main-to-do .image img {
+  width: 100%;
+  height: 40vh;
+}
+.main-to-do .text-box {
+  position: absolute;
+  bottom: 25%;
+  left: 0;
+  width: 100%;
+  height: 15%;
+  background-color: rgba(000, 000, 000, 0.3);
+  color: #fff;
+}
+.main-to-do .text-box .description {
+  margin: 3% 0 0 5%;
+  font-size: 18px;
+  font-weight: 500;
+}
+.main-to-do .text-box .tag {
+  margin: 2% 0 0 5%;
+}
+.main-overview {
+  width: 100vw;
+  height: 100vh;
+}
+.main-overview .title {
+  letter-spacing: 0.2em;
+}
+.main-overview .introduce {
+  font-size: 12px;
+  font-weight: 500;
+  color: #333;
+  opacity: 0.7;
+}
+.main-overview .overview-slide {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 50vh;
+}
+.main-overview .overview-main-image {
+  width: 100%;
+  height: 50%;
+}
+.main-overview .overview-main-image img {
+  width: 100%;
+  height: 100%;
+}
+.main-overview .overview-sub {
+  display: flex;
+  width: 100vw;
+  height: 50%;
+}
+.main-overview .overview-main-image,
+.main-overview .overview-sub-image01,
+.main-overview .overview-sub-image02 {
+  position: relative;
+}
+.main-overview .overview-sub-image01,
+.main-overview .overview-sub-image02 {
+  width: 100%;
+  height: 100%;
+}
+.main-overview .overview-sub-image01 img,
+.main-overview .overview-sub-image02 img {
+  width: 50vw;
+  height: 100%;
+}
+.hotel-name,
+.place-name {
+  position: absolute;
+  left: 5%;
+  color: #fff;
+}
+.hotel-name {
+  bottom: 20%;
+  font-size: 12px;
+}
+.place-name {
+  bottom: 10%;
+  font-size: 17px;
+}
+.main-hotel-information {
+  width: 100vw;
+  height: 140vh;
+  margin: 50px auto;
+}
+.main-hotel-information .information-title p {
+  margin-left: 5%;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.5em;
+}
+.information-text .text-title {
+  margin: 30px 0 30px 5%;
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+}
+.information-text .text-box {
+  margin-left: 5%;
+  font-size: 0.9em;
+  line-height: 1.5em;
+  color: #666;
+}
+.main-hotel-information .more-information {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  height: 6%;
+  margin: 30px 0 30px 5%;
+  background-color: #3f3a39;
+  color: #fff;
+}
+.main-hotel-information .more-information p {
+  width: 40%;
+  height: 10%;
+  padding-top: 7%;
+}
+.main-hotel-information .more-information span {
+  display: block;
+  width: 30%;
+  height: 100%;
+  background-image: url(/img/btn_top_more.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-indent: -99999px;
+}
+.main-hotel-information .information-hotel-area {
+  width: 100vw;
+  height: 65vh;
+}
+.information-hotel-area .seoul-hotel,
+.information-hotel-area .gyeongju-hotel,
+.information-hotel-area .jiri-hotel,
+.information-hotel-area .seorak-hotel {
+  position: relative;
+  width: 100%;
+  height: 20vh;
+}
+.information-hotel-area .hotel-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  text-indent: -99999px;
+}
+.seoul-hotel .seoul {
+  background-image: url(/img/about_01_m.jpg);
+}
+.gyeongju-hotel .gyeongju {
+  background-image: url(/img/about_02_m.jpg);
+}
+.jiri-hotel .jiri {
+  background-image: url(/img/about_03_m.jpg);
+}
+.seorak-hotel .seorak {
+  background-image: url(/img/about_04_m.jpg);
+}
+.hotel-area,
+.hotel-link {
+  position: absolute;
+  color: #fff;
+}
+.hotel-area {
+  top: 30%;
+  left: 5%;
+  font-size: 30px;
+}
+.hotel-link {
+  display: flex;
+  bottom: 20%;
+  left: 5%;
+  width: 50%;
+  font-size: 15px;
+}
+.hotel-link span {
+  display: inline-block;
+  width: 8%;
+  height: 10%;
+  margin-top: 2%;
+  margin-left: 5%;
+  background-image: url(/img/ico_right_arrow_w.svg);
+  background-repeat: no-repeat;
+  text-indent: -99999px;
+}
+.main-hotel-location {
+  width: 100vw;
+  height: 65vh;
+}
+.main-hotel-location .hotel-location-select {
+  width: 100vw;
+  height: 15%;
+}
+.main-hotel-location select {
+  display: block;
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  padding: 1em;
+  border: 1px solid #666;
+}
+.main-hotel-location .hotel-map {
+  width: 100vw;
+  height: 60%;
+  margin-top: 10%;
+}
+.main-hotel-location .hotel-map .map {
+  background-image: url();
+}
