@@ -1,0 +1,325 @@
+@charset 'utf-8';
+#wrap {
+  position: relative;
+  width: 100%;
+  min-width: 1220px;
+}
+/* #header_in */
+#header_in {
+  position: relative;
+  width: 1200px;
+  height: 50px;
+  margin: 0 auto 50px auto;
+}
+.h_logo {
+  width: 200px;
+  height: 60px;
+  margin: 20px 0 0 0;
+}
+.h_logo a {
+  display: block;
+  width: 200px;
+  height: 60px;
+  background-image: url(../img/logo.png);
+  background-repeat: no-repeat;
+  text-indent: -99999px;
+}
+/* .h_utility */
+.h_utility {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+}
+.h_utility ul {
+  display: flex;
+  justify-content: space-between;
+}
+.h_utility li a {
+  display: block;
+  color: #666;
+}
+.h_utility li a:hover {
+  color: #333;
+}
+/* .h_menu */
+.h_gnb {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 700px;
+  height: 50px;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+.menu .lnb {
+  position: relative;
+}
+.menu .lnb .main {
+  display: block;
+  width: 120px;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  color: #333;
+}
+.menu .lnb .main:hover {
+  color: lightseagreen;
+}
+.menu .search a {
+  display: block;
+  width: 30px;
+  height: 28px;
+  background-image: url(../img/icon_sc.png);
+  background-repeat: no-repeat;
+  text-indent: -99999px;
+}
+.h_gnb .sub {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  display: none;
+  width: 100%;
+  background-color: #111;
+  font-size: 10px;
+  color: #fff;
+  z-index: 100;
+}
+.h_gnb .sub ul {
+  padding: 10px 0;
+  text-align: center;
+}
+.h_gnb .sub li {
+  padding: 5px 0;
+}
+.h_gnb .sub li a {
+  font-size: 15px;
+  color: #575759;
+}
+.h_gnb > ul > li:hover {
+  font-weight: 700;
+}
+/* .container */
+/* .mSlide */
+.msImg {
+  position: relative;
+  height: 600px;
+  margin: 0 0 100px 0;
+  overflow: hidden;
+}
+.msImgBox {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}
+.msImgBox a {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -960px;
+}
+.msPager {
+  display: none;
+  margin-top: 50px;
+}
+.msPager ul {
+  display: flex;
+  justify-content: center;
+}
+.msPager li {
+  width: 60px;
+  height: 10px;
+  margin: 0 20px;
+  background-color: #cacaca;
+  text-indent: -99999px;
+  cursor: pointer;
+}
+.msPager .active {
+  background-color: violet;
+}
+.msPrev,
+.msNext {
+  position: absolute;
+  top: 350px;
+  width: 70px;
+  height: 70px;
+  background-repeat: no-repeat;
+  text-indent: -99999px;
+  cursor: pointer;
+}
+.msPrev {
+  left: 150px;
+  background-image: url(../img/a_left.png);
+}
+.msNext {
+  right: 150px;
+  background-image: url(../img/a_right.png);
+}
+/* .brandIntro */
+.brandIntro {
+  position: relative;
+  width: 1200px;
+  height: 250px;
+  margin: 0 auto 100px auto;
+}
+.brandIntro h2 {
+  display: block;
+  width: 300px;
+  margin: 0 auto 30px auto;
+  font-size: 30px;
+  font-weight: 500;
+}
+.brandImg {
+  display: flex;
+  justify-content: space-between;
+}
+.brandImg a {
+  display: block;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+/* .event */
+.event {
+  height: 400px;
+  margin: 0 0 100px 0;
+  background-color: rgb(249, 244, 244);
+}
+.event_in {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 80px 0 0 0;
+}
+.event_in ul {
+  display: flex;
+  justify-content: space-between;
+}
+.line {
+  display: block;
+  width: 80px;
+  height: 3px;
+  margin: 0 0 15px 0;
+  background-color: #333;
+}
+.e_text {
+  margin: 0 0 30px 0;
+  font-size: 15px;
+  font-weight: 500;
+  color: #555;
+}
+.e_event {
+  font-size: 22px;
+  font-weight: 500;
+}
+.event_in li:first-child {
+  position: relative;
+  width: 250px;
+}
+.event_in li div {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+}
+.event_in li div button {
+  display: block;
+  width: 25px;
+  height: 25px;
+  margin: 0 3px 0 0;
+  background-repeat: no-repeat;
+  text-indent: -99999px;
+}
+.e_prev {
+  background-image: url(../img/btnL.png);
+}
+.e_next {
+  background-image: url(../img/btnR.png);
+}
+/* .showRoom */
+.showRoom {
+  width: 1200px;
+  margin: 0 auto 100px auto;
+}
+.showRoom h2 {
+  margin: 0 0 20px 0;
+  font-size: 25px;
+  font-weight: 500;
+}
+.showRoom ul {
+  display: flex;
+  justify-content: space-between;
+}
+/* .sites */
+.sites {
+  height: 50px;
+  background-color: rgb(249, 244, 244);
+  margin: 0 0 30px 0;
+}
+.sites ul {
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 1em;
+}
+.sites li a {
+  font-size: 18px;
+  color: #666;
+}
+.sites li a:hover {
+  color: #333;
+}
+/* footer_in */
+#footer_in {
+  position: relative;
+  width: 1200px;
+  height: 250px;
+  margin: 0 auto;
+}
+.f_logo {
+  display: block;
+  width: 110px;
+  height: 40px;
+  background-image: url(../img/fLogo.png);
+  background-repeat: no-repeat;
+  text-indent: -99999px;
+}
+.f_menu ul {
+  position: absolute;
+  top: 0;
+  left: 150px;
+  display: flex;
+}
+.f_menu li a {
+  display: block;
+  margin: 0 20px 0 0;
+  font-size: 15px;
+  color: #666;
+}
+.f_info {
+  position: absolute;
+  top: 40px;
+  left: 150px;
+  font-size: 13px;
+  line-height: 18px;
+  color: #666;
+}
+.f_copyright {
+  position: absolute;
+  top: 110px;
+  left: 150px;
+  color: #666;
+}
+
+/* 이미지 맞출때 transform translate 활용하기 */
+/* 스네이크 카멜 통일하기 */
+/* 비어잇는 칸 없게하기 */
+/* 시멘틱 태그 많이 활용하기 */
+/* 귀찮아도 클래스 이름 다 쓰기 */
+/* font-size 18px 넘어가면 line-height 1 e.m정도 주기 */
+/* brand에서 p태그로 하나 빼고 나머지 묶기 */
+/* footer에서 2부분으로  묶은 다음 3개로 묶기 */
